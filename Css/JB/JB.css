@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+.slider {
+    width: 100%;
+    height: 90vh;
+    position: relative;
+}
+
+.Slider-backg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(50%);
+}
+
+.contenu-slider {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 45px;
+    text-align: center;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.5em;
+}
+
+.section {
+    padding: 50px 20px;
+}
+
+.noir {
+    background: black;
+    color: #FFF;
+}
+
+.section-content {
+    max-width: 1280px;
+    margin: auto;
+}
+
+.cont1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+}
+
+.moi, .text {
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.w25 {
+    width: 23%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.skill {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skill img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.CV {
+    background: black;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.CV img {
+    width: 50%;
+    max-width: 90%;
+    height: auto;
+}
+
+@media screen and (max-width: 1024px) {
+    .w25 {
+        width: 45%;
+    }
+    h1 {
+        font-size: 3rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .cont1 {
+        flex-direction: column;
+        align-items: center;
+    }
+    .w25 {
+        width: 80%;
+    }
+    h1 {
+        font-size: 2.5rem;
+    }
+    h2 {
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .w25 {
+        width: 100%;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    .CV img {
+        width: 50%;
+        max-width: 100%;
+    }
+}
